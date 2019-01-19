@@ -1,0 +1,33 @@
+<div class="layout-menu-wrapper layout-menu-dark" [ngClass]="{'active': menuActive}">
+  <!-- <div class="user-panel clearfix">
+  <div class="pull-left image">
+      <img src="assets/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+    </div> -->
+    <!-- <div class="pull-left info">
+      <p></p>
+      <a (click)="logOut()"><i class="fa fa-circle text-success"></i><span>退出</span></a>
+  </div>  -->
+  <ul class="layout-menu" >
+      <li *ngFor="let menu of menus;let i = index">
+        <a [class.active]='menu.isOpen'(click)="toggleMenuItem($event,menu)">
+          <i class="fa  {{menu.icon?menu.icon:'fa-bars'}}"></i>
+          <span>{{menu.name}}</span>
+          <i class="fa fa-fw fa-angle-down" *ngIf="menu.hasChildrens"></i>
+        </a>
+        <ul class="{{menu.isOpen?'submenushow':'submenuhide'}}">
+          <li *ngFor="let child of menu.children; let j = index" >
+            <a  routerLink="{{child.route?child.route:'**'}}"
+               
+                [class.active]="child.active">
+              <span>{{child.name}}</span>
+            </a>
+            <div class="layout-menu-tooltip">
+              <div class="layout-menu-tooltip-arrow"></div>
+              <div class="layout-menu-tooltip-text">{{child.name}}</div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+</div>
+

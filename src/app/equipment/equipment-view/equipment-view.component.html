@@ -1,0 +1,33 @@
+<div class="content-section introduction">
+  <div>
+    <span class="feature-title">设备管理<span class="gt">&gt;</span>设备总览</span>
+  </div>
+</div>
+<div class="content-section implementation GridDemo">
+  <div class="ui-g">
+    <div class="ui-g-12 ui-g-nopad">
+        <div class="ui-g-12 ui-md-12 ui-lg-6">
+          <div class="box box-solid">
+            <div class="box-body">
+              <div class="media">
+                  <div class="chart-container">
+                      <echart [graphOpt]="assetStatus" class="nf-chart"></echart>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-g-12 ui-md-12 ui-lg-6">
+          <div class="box box-solid">
+            <div class="box-body">
+              <div class="media">
+                <div class="chart-container">
+                    <echart [graphOpt]="engineRoom" class="nf-chart"></echart>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+[
+  { "id": "1",
+      "icon": "fa-superpowers",
+      "name": "设备管理",
+      "children":  [
+          {"icon":"", "route": "equipment" , "name": "设备总览"},
+          {"icon":"", "route": "equipment/import" , "name": "导入设备"},
+          {"icon":"", "route": "equipment/search" , "name": "设备检索"},
+          {"icon":"", "route": "equipment/info" , "name": "设备检测"}
+      ]
+  },
+  { "id": "2",
+      "icon": "fa-assistive-listening-systems",
+      "name": "巡检管理",
+      "children":  [
+          { "icon": "", "route": "inspection/view", "name": "巡检总览" },
+          { "icon": "", "route": "inspection/plan", "name": "巡检计划" },
+          { "icon": "", "route": "inspection/talk", "name": "巡检报告" },
+          { "icon": "", "route": "inspection/inspectionSetting/object", "name": "巡检配置" }
+      ]
+  },
+  { "id": "3",
+      "icon": "fa-line-chart",
+      "name":"报障管理",
+      "children":  [
+
+          { "icon": "", "route": "report/review", "name": "报障发起"},
+          { "icon": "", "route": "report/history", "name": "历史报障"},
+          { "icon": "", "route": "report", "name": "今日总览"}
+      ]
+  },
+  { "id": "4",
+      "icon": "fa-calendar-check-o",
+      "name": "值班管理",
+      "children":  [
+          { "icon": "", "route": "duty/overview" , "name": "值班总览" },
+          { "icon": "", "route": "duty/current"  , "name": "当前值班"},
+          { "icon": "", "route": "duty/manage" , "name": "值班管理" },
+          { "icon": "", "route": "duty/dutyshift"  , "name": "调班总览"},
+          { "icon": "", "route": "duty/setting" , "name": "班次设置" },
+          { "icon": "", "route": "duty/handoveroverview" , "name": "交接班总览" },
+          { "icon": "", "route": "duty/minhandoveroverview" , "name": "我的交接班" }
+      ]
+  },
+  { "id": "5",
+      "icon": "fa-university",
+      "name": "库房管理",
+      "children":  [
+          { "icon": "", "route": "inventory/inventory" , "name": "库存总览"},
+          { "icon": "", "route": "inventory/flow/overview" , "name": "入库管理"},
+          { "icon": "", "route": "inventory/borrowManage/outbound" , "name": "借用管理"},
+          { "icon": "", "route": "inventory/requisitionmanage/requestionOverview" , "name": "领用管理"},
+          { "icon": "", "route": "inventory/material" , "name": "物品维护"}
+      ]
+  },
+  { "id": "6",
+      "icon": "fa-cogs",
+      "route":"capacity/capacityBasalDatas/capviewroot",
+      "name": "空间管理",
+      "children":  [
+      ]
+  },
+  { "id": "7",
+      "icon": "fa-cogs",
+      "name": "知识库",
+      "route": "knowledge/basaldata",
+      "children":  [
+          { "icon": "", "route": "knowledge/chart" , "name": "知识管理"},
+          { "icon": "", "route": "knowledge/klgmine" , "name": "我的知识库"}
+      ]
+  },
+  { "id": "8",
+      "icon": "fa-wrench",
+      "name": "运维管理",
+      "route": "",
+      "children":  [
+          { "icon": "", "route": "maintenance/malfunctionBase/malfunctionOverview" , "name": "故障管理"},
+          { "icon": "", "route": "reqForService/rfsBase/serviceOverview" , "name": "服务请求"}
+      ]
+  },
+  { "id": "13",
+      "icon": "fa-bars",
+      "name": "系统配置",
+      "children":  [
+          { "icon": "", "route": "system/person" , "name": "人员管理"},
+          { "icon": "", "route": "system/jur" , "name": "权限管理"}
+      ]
+  },
+  { "id": "14",
+      "icon": "fa-life-saver",
+      "name":"报表报告",
+      "children":  [
+          { "icon": "", "route": "reports/make" , "name": "制作报表"},
+          { "icon": "", "route": "reports/view" , "name": "查看报表"},
+          { "icon": "", "route": "reports/send", "name": "发送配置" }
+      ]
+  }
+]

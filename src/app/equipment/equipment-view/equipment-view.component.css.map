@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAC,KAAK;EACZ,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "equipment-view.component.scss"
+    ],
+    "names": [],
+    "file": "equipment-view.component.css"
+}
